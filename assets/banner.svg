@@ -1,234 +1,344 @@
-<svg xmlns="http://www.w3.org/2000/svg"
-     width="1280"
-     height="400"
-     viewBox="0 0 1280 400">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1280"
+    height="400"
+    viewBox="0 0 1280 400">
 
-  <defs>
+    <defs>
 
-    <!-- Background -->
-    <linearGradient id="background"
-                    x1="0" y1="0"
-                    x2="1" y2="1">
-      <stop offset="0%" stop-color="#040207"/>
-      <stop offset="45%" stop-color="#0B0610"/>
-      <stop offset="75%" stop-color="#15091A"/>
-      <stop offset="100%" stop-color="#07030B"/>
-    </linearGradient>
+        <!-- ================================================= -->
+        <!-- BACKGROUND -->
+        <!-- ================================================= -->
 
-    <!-- Ambient purple -->
-    <radialGradient id="purpleGlow">
-      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.18"/>
-      <stop offset="45%" stop-color="#7E22CE" stop-opacity="0.07"/>
-      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
-    </radialGradient>
+        <linearGradient
+            id="background"
+            x1="0"
+            y1="0"
+            x2="1"
+            y2="1">
 
-    <!-- Ambient pink -->
-    <radialGradient id="pinkGlow">
-      <stop offset="0%" stop-color="#C0268C" stop-opacity="0.14"/>
-      <stop offset="50%" stop-color="#C0268C" stop-opacity="0.04"/>
-      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
-    </radialGradient>
+            <stop offset="0%" stop-color="#040207"/>
+            <stop offset="45%" stop-color="#0B0610"/>
+            <stop offset="75%" stop-color="#15091A"/>
+            <stop offset="100%" stop-color="#07030B"/>
 
-    <!-- Name gradient -->
-    <linearGradient id="nameGradient"
-                    x1="0" y1="0"
-                    x2="1" y2="0">
-      <stop offset="0%" stop-color="#F5D0FE"/>
-      <stop offset="45%" stop-color="#E879F9"/>
-      <stop offset="100%" stop-color="#C084FC"/>
-    </linearGradient>
-
-    <!-- Accent -->
-    <linearGradient id="accent"
-                    x1="0" y1="0"
-                    x2="1" y2="0">
-      <stop offset="0%" stop-color="#C0268C"/>
-      <stop offset="50%" stop-color="#A855F7"/>
-      <stop offset="100%" stop-color="#E879F9"/>
-    </linearGradient>
-
-    <!-- Glow -->
-    <filter id="glow"
-            x="-100%" y="-100%"
-            width="300%" height="300%">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <filter id="softGlow"
-            x="-100%" y="-100%"
-            width="300%" height="300%">
-      <feGaussianBlur stdDeviation="14"/>
-    </filter>
-
-  </defs>
+        </linearGradient>
 
 
-  <!-- ================================================= -->
-  <!-- BACKGROUND -->
-  <!-- ================================================= -->
+        <radialGradient id="purpleGlow">
 
-  <rect width="1280"
+            <stop
+                offset="0%"
+                stop-color="#A855F7"
+                stop-opacity="0.18"/>
+
+            <stop
+                offset="45%"
+                stop-color="#7E22CE"
+                stop-opacity="0.07"/>
+
+            <stop
+                offset="100%"
+                stop-color="#000000"
+                stop-opacity="0"/>
+
+        </radialGradient>
+
+
+        <radialGradient id="pinkGlow">
+
+            <stop
+                offset="0%"
+                stop-color="#C0268C"
+                stop-opacity="0.14"/>
+
+            <stop
+                offset="50%"
+                stop-color="#C0268C"
+                stop-opacity="0.04"/>
+
+            <stop
+                offset="100%"
+                stop-color="#000000"
+                stop-opacity="0"/>
+
+        </radialGradient>
+
+
+        <!-- Name gradient -->
+
+        <linearGradient
+            id="nameGradient"
+            x1="0"
+            y1="0"
+            x2="1"
+            y2="0">
+
+            <stop offset="0%" stop-color="#F5D0FE"/>
+            <stop offset="45%" stop-color="#E879F9"/>
+            <stop offset="100%" stop-color="#C084FC"/>
+
+        </linearGradient>
+
+
+        <!-- Accent -->
+
+        <linearGradient
+            id="accent"
+            x1="0"
+            y1="0"
+            x2="1"
+            y2="0">
+
+            <stop offset="0%" stop-color="#C0268C"/>
+            <stop offset="50%" stop-color="#A855F7"/>
+            <stop offset="100%" stop-color="#E879F9"/>
+
+        </linearGradient>
+
+
+        <!-- Glow -->
+
+        <filter
+            id="glow"
+            x="-100%"
+            y="-100%"
+            width="300%"
+            height="300%">
+
+            <feGaussianBlur
+                stdDeviation="5"
+                result="blur"/>
+
+            <feMerge>
+
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+
+            </feMerge>
+
+        </filter>
+
+
+        <filter
+            id="softGlow"
+            x="-100%"
+            y="-100%"
+            width="300%"
+            height="300%">
+
+            <feGaussianBlur stdDeviation="14"/>
+
+        </filter>
+
+
+        <clipPath id="clip">
+
+            <rect
+                x="0"
+                y="0"
+                width="1280"
+                height="400"
+                rx="20"/>
+
+        </clipPath>
+
+    </defs>
+
+
+    <!-- ================================================= -->
+    <!-- BACKGROUND -->
+    <!-- ================================================= -->
+
+    <rect
+        width="1280"
         height="400"
         rx="20"
         fill="url(#background)"/>
 
-  <ellipse cx="830"
-           cy="190"
-           rx="420"
-           ry="270"
-           fill="url(#purpleGlow)">
 
-    <animate attributeName="cx"
-             values="800;870;800"
-             dur="9s"
-             repeatCount="indefinite"/>
+    <!-- Purple ambient light -->
 
-    <animate attributeName="cy"
-             values="190;215;190"
-             dur="9s"
-             repeatCount="indefinite"/>
+    <ellipse
+        cx="830"
+        cy="190"
+        rx="420"
+        ry="270"
+        fill="url(#purpleGlow)">
 
-  </ellipse>
+        <animate
+            attributeName="cx"
+            values="800;870;800"
+            dur="9s"
+            repeatCount="indefinite"/>
 
+        <animate
+            attributeName="cy"
+            values="190;215;190"
+            dur="9s"
+            repeatCount="indefinite"/>
 
-  <ellipse cx="1120"
-           cy="120"
-           rx="250"
-           ry="220"
-           fill="url(#pinkGlow)">
-
-    <animate attributeName="cx"
-             values="1120;1080;1120"
-             dur="8s"
-             repeatCount="indefinite"/>
-
-  </ellipse>
+    </ellipse>
 
 
-  <!-- ================================================= -->
-  <!-- SUBTLE GRID -->
-  <!-- ================================================= -->
+    <!-- Pink ambient light -->
 
-  <g stroke="#D946EF"
-     stroke-width="1"
-     opacity="0.035">
+    <ellipse
+        cx="1120"
+        cy="120"
+        rx="250"
+        ry="220"
+        fill="url(#pinkGlow)">
 
-    <path d="M0 80H1280"/>
-    <path d="M0 160H1280"/>
-    <path d="M0 240H1280"/>
-    <path d="M0 320H1280"/>
+        <animate
+            attributeName="cx"
+            values="1120;1080;1120"
+            dur="8s"
+            repeatCount="indefinite"/>
 
-    <path d="M160 0V400"/>
-    <path d="M320 0V400"/>
-    <path d="M480 0V400"/>
-    <path d="M640 0V400"/>
-    <path d="M800 0V400"/>
-    <path d="M960 0V400"/>
-    <path d="M1120 0V400"/>
-
-  </g>
+    </ellipse>
 
 
-  <!-- ================================================= -->
-  <!-- BACKGROUND PARTICLES -->
-  <!-- ================================================= -->
+    <!-- ================================================= -->
+    <!-- VERY SUBTLE GRID -->
+    <!-- ================================================= -->
 
-  <g fill="#C0268C"
-     filter="url(#glow)">
+    <g
+        stroke="#D946EF"
+        stroke-width="1"
+        opacity="0.035">
 
-    <circle cx="120" cy="65" r="1.8">
-      <animate attributeName="cy"
-               values="65;40;65"
-               dur="5s"
-               repeatCount="indefinite"/>
+        <path d="M0 80H1280"/>
+        <path d="M0 160H1280"/>
+        <path d="M0 240H1280"/>
+        <path d="M0 320H1280"/>
 
-      <animate attributeName="opacity"
-               values="0.15;0.7;0.15"
-               dur="5s"
-               repeatCount="indefinite"/>
-    </circle>
+        <path d="M160 0V400"/>
+        <path d="M320 0V400"/>
+        <path d="M480 0V400"/>
+        <path d="M640 0V400"/>
+        <path d="M800 0V400"/>
+        <path d="M960 0V400"/>
+        <path d="M1120 0V400"/>
 
-
-    <circle cx="270" cy="300" r="1.5">
-      <animate attributeName="cy"
-               values="300;275;300"
-               dur="6s"
-               repeatCount="indefinite"/>
-
-      <animate attributeName="opacity"
-               values="0.1;0.65;0.1"
-               dur="6s"
-               repeatCount="indefinite"/>
-    </circle>
+    </g>
 
 
-    <circle cx="540" cy="75" r="1.8">
-      <animate attributeName="cy"
-               values="75;105;75"
-               dur="7s"
-               repeatCount="indefinite"/>
+    <!-- ================================================= -->
+    <!-- BACKGROUND PARTICLES -->
+    <!-- ================================================= -->
 
-      <animate attributeName="opacity"
-               values="0.1;0.7;0.1"
-               dur="7s"
-               repeatCount="indefinite"/>
-    </circle>
+    <g fill="#C0268C" filter="url(#glow)">
 
+        <circle cx="120" cy="65" r="1.8">
 
-    <circle cx="680" cy="320" r="1.8">
-      <animate attributeName="cy"
-               values="320;285;320"
-               dur="5s"
-               repeatCount="indefinite"/>
+            <animate
+                attributeName="cy"
+                values="65;40;65"
+                dur="5s"
+                repeatCount="indefinite"/>
 
-      <animate attributeName="opacity"
-               values="0.1;0.8;0.1"
-               dur="5s"
-               repeatCount="indefinite"/>
-    </circle>
+            <animate
+                attributeName="opacity"
+                values="0.15;0.7;0.15"
+                dur="5s"
+                repeatCount="indefinite"/>
+
+        </circle>
 
 
-    <circle cx="1180" cy="55" r="2">
-      <animate attributeName="cy"
-               values="55;85;55"
-               dur="6s"
-               repeatCount="indefinite"/>
+        <circle cx="270" cy="300" r="1.5">
 
-      <animate attributeName="opacity"
-               values="0.1;0.8;0.1"
-               dur="6s"
-               repeatCount="indefinite"/>
-    </circle>
+            <animate
+                attributeName="cy"
+                values="300;275;300"
+                dur="6s"
+                repeatCount="indefinite"/>
 
-  </g>
+            <animate
+                attributeName="opacity"
+                values="0.1;0.65;0.1"
+                dur="6s"
+                repeatCount="indefinite"/>
+
+        </circle>
 
 
-  <!-- ================================================= -->
-  <!-- LEFT SIDE -->
-  <!-- ================================================= -->
+        <circle cx="540" cy="75" r="1.8">
 
-  <!-- I AM -->
+            <animate
+                attributeName="cy"
+                values="75;105;75"
+                dur="7s"
+                repeatCount="indefinite"/>
 
-  <text x="80"
-        y="91"
-        fill="#E879F9"
+            <animate
+                attributeName="opacity"
+                values="0.1;0.7;0.1"
+                dur="7s"
+                repeatCount="indefinite"/>
+
+        </circle>
+
+
+        <circle cx="680" cy="320" r="1.8">
+
+            <animate
+                attributeName="cy"
+                values="320;285;320"
+                dur="5s"
+                repeatCount="indefinite"/>
+
+            <animate
+                attributeName="opacity"
+                values="0.1;0.8;0.1"
+                dur="5s"
+                repeatCount="indefinite"/>
+
+        </circle>
+
+
+        <circle cx="1180" cy="55" r="2">
+
+            <animate
+                attributeName="cy"
+                values="55;85;55"
+                dur="6s"
+                repeatCount="indefinite"/>
+
+            <animate
+                attributeName="opacity"
+                values="0.1;0.8;0.1"
+                dur="6s"
+                repeatCount="indefinite"/>
+
+        </circle>
+
+    </g>
+
+
+    <!-- ================================================= -->
+    <!-- LEFT SIDE -->
+    <!-- ================================================= -->
+
+    <text
+        x="80"
+        y="88"
+        fill="#9F6A9E"
         font-family="Arial, Helvetica, sans-serif"
-        font-size="16"
-        font-weight="700"
+        font-size="13"
+        font-weight="600"
         letter-spacing="5">
 
-    I AM
+        I AM
 
-  </text>
+    </text>
 
 
-  <!-- NAME -->
+    <!-- NAME -->
 
-  <text x="78"
+    <text
+        x="78"
         y="155"
         fill="url(#nameGradient)"
         font-family="Arial, Helvetica, sans-serif"
@@ -236,119 +346,641 @@
         font-weight="700"
         letter-spacing="1">
 
-    KANEEZ FATIMA
+        KANEEZ FATIMA
 
-  </text>
+    </text>
 
 
-  <!-- TAGLINE -->
+    <!-- TAGLINE -->
 
-  <text x="80"
+    <text
+        x="80"
         y="200"
         fill="#F3E8F5"
         font-family="Arial, Helvetica, sans-serif"
         font-size="23"
         font-weight="500">
 
-    Engineering AI, LLMs &amp;
+        Engineering AI, LLMs &amp;
 
-  </text>
+    </text>
 
 
-  <text x="80"
+    <text
+        x="80"
         y="230"
         fill="#F3E8F5"
         font-family="Arial, Helvetica, sans-serif"
         font-size="23"
         font-weight="500">
 
-    Intelligent Agents
-
-  </text>
-
-
-  <!-- ================================================= -->
-  <!-- ROTATING FOCUS -->
-  <!-- ================================================= -->
-
-  <g>
-
-    <!-- Machine Learning -->
-
-    <text x="80"
-          y="275"
-          fill="#C8B8CB"
-          font-family="Arial, Helvetica, sans-serif"
-          font-size="16">
-
-      Machine Learning
-
-      <animate attributeName="opacity"
-               values="1;1;0;0"
-               keyTimes="0;0.18;0.24;1"
-               dur="8s"
-               repeatCount="indefinite"/>
+        Intelligent Agents
 
     </text>
 
 
-    <!-- Generative AI -->
+    <!-- ================================================= -->
+    <!-- ROTATING SPECIALIZATION -->
+    <!-- Hard switch = no ugly merging -->
+    <!-- ================================================= -->
 
-    <text x="80"
-          y="275"
-          fill="#C8B8CB"
-          font-family="Arial, Helvetica, sans-serif"
-          font-size="16"
-          opacity="0">
+    <g>
 
-      Generative AI
+        <!-- Machine Learning -->
 
-      <animate attributeName="opacity"
-               values="0;0;1;1;0"
-               keyTimes="0;0.24;0.30;0.43;0.49"
-               dur="8s"
-               repeatCount="indefinite"/>
+        <text
+            x="80"
+            y="275"
+            fill="#C8B8CB"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="16"
+            opacity="1">
+
+            Machine Learning
+
+            <animate
+                attributeName="opacity"
+                values="1;1;0;0"
+                keyTimes="0;0.18;0.24;1"
+                dur="8s"
+                repeatCount="indefinite"/>
+
+        </text>
+
+
+        <!-- Generative AI -->
+
+        <text
+            x="80"
+            y="275"
+            fill="#C8B8CB"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="16"
+            opacity="0">
+
+            Generative AI
+
+            <animate
+                attributeName="opacity"
+                values="0;0;1;1;0"
+                keyTimes="0;0.24;0.30;0.43;0.49"
+                dur="8s"
+                repeatCount="indefinite"/>
+
+        </text>
+
+
+        <!-- Agentic AI -->
+
+        <text
+            x="80"
+            y="275"
+            fill="#C8B8CB"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="16"
+            opacity="0">
+
+            Agentic AI
+
+            <animate
+                attributeName="opacity"
+                values="0;0;1;1;0"
+                keyTimes="0;0.49;0.55;0.68;0.74"
+                dur="8s"
+                repeatCount="indefinite"/>
+
+        </text>
+
+
+        <!-- LLM Applications -->
+
+        <text
+            x="80"
+            y="275"
+            fill="#C8B8CB"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="16"
+            opacity="0">
+
+            LLM Applications
+
+            <animate
+                attributeName="opacity"
+                values="0;0;1;1"
+                keyTimes="0;0.74;0.80;1"
+                dur="8s"
+                repeatCount="indefinite"/>
+
+        </text>
+
+    </g>
+
+
+    <!-- Indicator -->
+
+    <circle
+        cx="62"
+        cy="269"
+        r="3"
+        fill="#C0268C"
+        filter="url(#glow)">
+
+        <animate
+            attributeName="r"
+            values="2.5;4;2.5"
+            dur="1.5s"
+            repeatCount="indefinite"/>
+
+        <animate
+            attributeName="opacity"
+            values="0.4;1;0.4"
+            dur="1.5s"
+            repeatCount="indefinite"/>
+
+    </circle>
+
+
+    <!-- ================================================= -->
+    <!-- TECH LINE -->
+    <!-- ================================================= -->
+
+    <text
+        x="80"
+        y="330"
+        fill="#645468"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="12"
+        letter-spacing="2">
+
+        PYTHON • MACHINE LEARNING • LLMS • AGENTS
 
     </text>
 
 
-    <!-- Agentic AI -->
+    <!-- ================================================= -->
+    <!-- RIGHT SIDE: FEMALE AI CODER -->
+    <!-- ================================================= -->
 
-    <text x="80"
-          y="275"
-          fill="#C8B8CB"
-          font-family="Arial, Helvetica, sans-serif"
-          font-size="16"
-          opacity="0">
-
-      Agentic AI
-
-      <animate attributeName="opacity"
-               values="0;0;1;1;0"
-               keyTimes="0;0.49;0.55;0.68;0.74"
-               dur="8s"
-               repeatCount="indefinite"/>
-
-    </text>
+    <g
+        transform="translate(850 28)">
 
 
-    <!-- LLM Applications -->
+        <!-- Ambient glow behind character -->
 
-    <text x="80"
-          y="275"
-          fill="#C8B8CB"
-          font-family="Arial, Helvetica, sans-serif"
-          font-size="16"
-          opacity="0">
+        <ellipse
+            cx="190"
+            cy="245"
+            rx="170"
+            ry="95"
+            fill="#A855F7"
+            opacity="0.05"
+            filter="url(#softGlow)"/>
 
-      LLM Applications
 
-      <animate attributeName="opacity"
-               values="0;0;1;1"
-               keyTimes="0;0.74;0.80;1"
-               dur="8s"
-               repeatCount="indefinite"/>
+        <!-- ================================================= -->
+        <!-- FLOATING HI -->
+        <!-- ================================================= -->
 
-    </text>
-  </g>
+        <g>
+
+            <rect
+                x="55"
+                y="25"
+                width="82"
+                height="37"
+                rx="18"
+                fill="#170A1A"
+                stroke="#8B3B83"
+                stroke-width="1"/>
+
+            <text
+                x="96"
+                y="49"
+                text-anchor="middle"
+                fill="#F0C8EE"
+                font-family="Arial, Helvetica, sans-serif"
+                font-size="14"
+                font-weight="600">
+
+                Hi!
+
+            </text>
+
+            <path
+                d="M125 57 L137 65 L128 67 Z"
+                fill="#170A1A"
+                stroke="#8B3B83"
+                stroke-width="1"/>
+
+
+            <!-- bubble appearance -->
+
+            <animate
+                attributeName="opacity"
+                values="0;1;1;1;0"
+                keyTimes="0;0.05;0.30;0.55;0.62"
+                dur="8s"
+                repeatCount="indefinite"/>
+
+        </g>
+
+
+        <!-- ================================================= -->
+        <!-- HAIR -->
+        <!-- ================================================= -->
+
+        <path
+            d="
+                M125 102
+                C125 63 160 42 202 48
+                C240 53 260 81 257 116
+                C253 99 243 89 232 84
+                C228 111 205 129 174 131
+                C151 132 137 121 125 102
+                Z
+            "
+            fill="#261228"
+            stroke="#713565"
+            stroke-width="1"/>
+
+
+        <!-- ================================================= -->
+        <!-- FACE -->
+        <!-- ================================================= -->
+
+        <ellipse
+            cx="191"
+            cy="112"
+            rx="48"
+            ry="55"
+            fill="#D6A48F"/>
+
+
+        <!-- Hair front -->
+
+        <path
+            d="
+                M145 96
+                C149 71 177 58 203 64
+                C225 68 241 83 242 101
+                C228 90 217 89 204 92
+                C186 96 166 100 145 96
+                Z
+            "
+            fill="#2B142D"/>
+
+
+        <!-- ================================================= -->
+        <!-- EYES -->
+        <!-- ================================================= -->
+
+        <ellipse
+            cx="173"
+            cy="111"
+            rx="5"
+            ry="3"
+            fill="#2A182B">
+
+            <!-- blink -->
+
+            <animate
+                attributeName="ry"
+                values="3;3;0.4;3;3"
+                keyTimes="0;0.43;0.47;0.51;1"
+                dur="5s"
+                repeatCount="indefinite"/>
+
+        </ellipse>
+
+
+        <ellipse
+            cx="210"
+            cy="111"
+            rx="5"
+            ry="3"
+            fill="#2A182B">
+
+            <animate
+                attributeName="ry"
+                values="3;3;0.4;3;3"
+                keyTimes="0;0.43;0.47;0.51;1"
+                dur="5s"
+                repeatCount="indefinite"/>
+
+        </ellipse>
+
+
+        <!-- Nose -->
+
+        <path
+            d="M191 113 L188 126 L195 127"
+            fill="none"
+            stroke="#A36F65"
+            stroke-width="1"/>
+
+
+        <!-- Smile -->
+
+        <path
+            d="M179 137 Q191 146 203 137"
+            fill="none"
+            stroke="#7E4851"
+            stroke-width="2"/>
+
+
+        <!-- ================================================= -->
+        <!-- NECK -->
+        <!-- ================================================= -->
+
+        <rect
+            x="174"
+            y="157"
+            width="34"
+            height="32"
+            rx="8"
+            fill="#D6A48F"/>
+
+
+        <!-- ================================================= -->
+        <!-- BODY (DRESS) -->
+        <!-- ================================================= -->
+
+        <path
+            d="
+                M143 178
+                Q190 160 237 178
+                L265 275
+                L116 275
+                Z
+            "
+            fill="#6D2C8A"
+            stroke="#A855F7"
+            stroke-width="1.2"/>
+
+
+        <!-- Accent collar -->
+
+        <path
+            d="
+                M174 174
+                L191 192
+                L208 174
+            "
+            fill="none"
+            stroke="#F0ABFC"
+            stroke-width="2"/>
+
+
+        <!-- ================================================= -->
+        <!-- LEFT ARM -->
+        <!-- ================================================= -->
+
+        <path
+            d="
+                M145 188
+                C126 197 112 212 106 229
+                L123 236
+                C135 223 148 213 163 208
+                Z
+            "
+            fill="#5B2470"
+            stroke="#A855F7"
+            stroke-width="1"/>
+
+
+        <!-- ================================================= -->
+        <!-- RIGHT ARM -->
+        <!-- ================================================= -->
+
+        <path
+            d="
+                M233 188
+                C253 198 266 211 274 228
+                L258 237
+                C247 223 234 214 219 209
+                Z
+            "
+            fill="#5B2470"
+            stroke="#A855F7"
+            stroke-width="1"/>
+
+
+        <!-- ================================================= -->
+        <!-- LAPTOP -->
+        <!-- ================================================= -->
+
+        <rect
+            x="91"
+            y="216"
+            width="198"
+            height="108"
+            rx="12"
+            fill="#3D3450"
+            stroke="#B084D6"
+            stroke-width="2"/>
+
+
+        <!-- Laptop glow -->
+
+        <rect
+            x="99"
+            y="224"
+            width="182"
+            height="92"
+            rx="8"
+            fill="#241F33"/>
+
+
+        <!-- Screen accent -->
+
+        <rect
+            x="111"
+            y="237"
+            width="155"
+            height="2"
+            fill="url(#accent)"
+            opacity="0.8"/>
+
+
+        <!-- Terminal dots -->
+
+        <circle cx="118" cy="249" r="3" fill="#C0268C"/>
+        <circle cx="129" cy="249" r="3" fill="#7E22CE"/>
+        <circle cx="140" cy="249" r="3" fill="#A855F7"/>
+
+
+        <!-- Code line 1 -->
+
+        <text
+            x="116"
+            y="268"
+            fill="#9F7DA0"
+            font-family="monospace"
+            font-size="10">
+
+            &gt; initializing_ai...
+
+            <animate
+                attributeName="opacity"
+                values="0.2;1;0.2"
+                dur="2.5s"
+                repeatCount="indefinite"/>
+
+        </text>
+
+
+        <!-- Code line 2 -->
+
+        <text
+            x="116"
+            y="284"
+            fill="#B875B0"
+            font-family="monospace"
+            font-size="10">
+
+            &gt; loading_llm ✓
+
+        </text>
+
+
+        <!-- Code line 3 -->
+
+        <text
+            x="116"
+            y="300"
+            fill="#A855F7"
+            font-family="monospace"
+            font-size="10">
+
+            &gt; agent_ready
+
+        </text>
+
+
+        <!-- Cursor -->
+
+        <rect
+            x="191"
+            y="293"
+            width="5"
+            height="10"
+            fill="#E879F9">
+
+            <animate
+                attributeName="opacity"
+                values="1;0;1"
+                dur="0.8s"
+                repeatCount="indefinite"/>
+
+        </rect>
+
+
+        <!-- Laptop base -->
+
+        <path
+            d="
+                M78 326
+                H302
+                L286 339
+                H94
+                Z
+            "
+            fill="#2A2438"
+            stroke="#B084D6"
+            stroke-width="1"/>
+
+
+        <!-- ================================================= -->
+        <!-- FLOATING AI DATA PARTICLES -->
+        <!-- ================================================= -->
+
+        <circle
+            r="3"
+            fill="#E879F9"
+            filter="url(#glow)">
+
+            <animateMotion
+                dur="3.5s"
+                repeatCount="indefinite"
+                path="
+                    M30 190
+                    C80 160 80 130 120 120
+                    C140 115 155 110 170 105
+                "/>
+
+        </circle>
+
+
+        <circle
+            r="2.5"
+            fill="#C0268C"
+            filter="url(#glow)">
+
+            <animateMotion
+                dur="4s"
+                begin="1s"
+                repeatCount="indefinite"
+                path="
+                    M310 170
+                    C280 150 270 130 250 110
+                "/>
+
+        </circle>
+
+
+        <!-- ================================================= -->
+        <!-- BREATHING EFFECT -->
+        <!-- ================================================= -->
+
+        <animateTransform
+            attributeName="transform"
+            type="translate"
+            values="
+                850 28;
+                850 25;
+                850 28
+            "
+            dur="4s"
+            repeatCount="indefinite"/>
+
+    </g>
+
+
+    <!-- ================================================= -->
+    <!-- MOVING LIGHT SWEEP -->
+    <!-- ================================================= -->
+
+    <rect
+        x="-300"
+        y="0"
+        width="180"
+        height="400"
+        fill="url(#accent)"
+        opacity="0.025"
+        transform="skewX(-18)">
+
+        <animate
+            attributeName="x"
+            values="-300;1450"
+            dur="10s"
+            repeatCount="indefinite"/>
+
+    </rect>
+
+
+    <!-- ================================================= -->
+    <!-- BORDER -->
+    <!-- ================================================= -->
+
+    <rect
+        x="10"
+        y="10"
+        width="1260"
+        height="380"
+        rx="20"
+        fill="none"
+        stroke="#6B315F"
+        stroke-width="1"
+        opacity="0.55"/>
+
 </svg>
