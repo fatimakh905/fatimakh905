@@ -65,7 +65,9 @@
         </radialGradient>
 
 
-        <!-- Name gradient -->
+        <!-- ================================================= -->
+        <!-- NAME GRADIENT -->
+        <!-- ================================================= -->
 
         <linearGradient
             id="nameGradient"
@@ -81,7 +83,9 @@
         </linearGradient>
 
 
-        <!-- Accent -->
+        <!-- ================================================= -->
+        <!-- ACCENT -->
+        <!-- ================================================= -->
 
         <linearGradient
             id="accent"
@@ -97,7 +101,9 @@
         </linearGradient>
 
 
-        <!-- Glow -->
+        <!-- ================================================= -->
+        <!-- GLOW -->
+        <!-- ================================================= -->
 
         <filter
             id="glow"
@@ -111,10 +117,8 @@
                 result="blur"/>
 
             <feMerge>
-
                 <feMergeNode in="blur"/>
                 <feMergeNode in="SourceGraphic"/>
-
             </feMerge>
 
         </filter>
@@ -381,102 +385,98 @@
 
     <!-- ================================================= -->
     <!-- ROTATING SPECIALIZATION -->
-    <!-- Hard switch = no ugly merging -->
     <!-- ================================================= -->
 
-<!-- ================================================= -->
-<!-- ROTATING SPECIALIZATION -->
-<!-- ================================================= -->
+    <g>
 
-<g>
+        <!-- Machine Learning -->
 
-    <!-- Machine Learning -->
+        <text
+            x="80"
+            y="275"
+            fill="#C8B8CB"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="16"
+            opacity="1">
 
-    <text
-        x="80"
-        y="275"
-        fill="#C8B8CB"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="16">
+            Machine Learning
 
-        Machine Learning
+            <animate
+                attributeName="opacity"
+                values="1;1;0;0"
+                keyTimes="0;0.18;0.24;1"
+                dur="8s"
+                repeatCount="indefinite"/>
 
-        <animate
-            attributeName="opacity"
-            values="1;1;0;0;0"
-            keyTimes="0;0.20;0.25;0.25;1"
-            dur="8s"
-            repeatCount="indefinite"/>
-
-    </text>
+        </text>
 
 
-    <!-- Generative AI -->
+        <!-- Generative AI -->
 
-    <text
-        x="80"
-        y="275"
-        fill="#C8B8CB"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="16"
-        opacity="0">
+        <text
+            x="80"
+            y="275"
+            fill="#C8B8CB"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="16"
+            opacity="0">
 
-        Generative AI
+            Generative AI
 
-        <animate
-            attributeName="opacity"
-            values="0;0;1;1;0"
-            keyTimes="0;0.20;0.25;0.45;0.50"
-            dur="8s"
-            repeatCount="indefinite"/>
+            <animate
+                attributeName="opacity"
+                values="0;0;1;1;0"
+                keyTimes="0;0.24;0.30;0.43;0.49"
+                dur="8s"
+                repeatCount="indefinite"/>
 
-    </text>
-
-
-    <!-- Agentic AI -->
-
-    <text
-        x="80"
-        y="275"
-        fill="#C8B8CB"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="16"
-        opacity="0">
-
-        Agentic AI
-
-        <animate
-            attributeName="opacity"
-            values="0;0;1;1;0"
-            keyTimes="0;0.45;0.50;0.70;0.75"
-            dur="8s"
-            repeatCount="indefinite"/>
-
-    </text>
+        </text>
 
 
-    <!-- LLM Applications -->
+        <!-- Agentic AI -->
 
-    <text
-        x="80"
-        y="275"
-        fill="#C8B8CB"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="16"
-        opacity="0">
+        <text
+            x="80"
+            y="275"
+            fill="#C8B8CB"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="16"
+            opacity="0">
 
-        LLM Applications
+            Agentic AI
 
-        <animate
-            attributeName="opacity"
-            values="0;0;1;1;0"
-            keyTimes="0;0.70;0.75;0.95;1"
-            dur="8s"
-            repeatCount="indefinite"/>
+            <animate
+                attributeName="opacity"
+                values="0;0;1;1;0"
+                keyTimes="0;0.49;0.55;0.68;0.74"
+                dur="8s"
+                repeatCount="indefinite"/>
 
-    </text>
+        </text>
 
-</g>
+
+        <!-- LLM Applications -->
+
+        <text
+            x="80"
+            y="275"
+            fill="#C8B8CB"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="16"
+            opacity="0">
+
+            LLM Applications
+
+            <animate
+                attributeName="opacity"
+                values="0;0;1;1"
+                keyTimes="0;0.74;0.80;1"
+                dur="8s"
+                repeatCount="indefinite"/>
+
+        </text>
+
+    </g>
 
 
     <!-- Indicator -->
@@ -528,7 +528,7 @@
         transform="translate(850 28)">
 
 
-        <!-- Ambient glow behind character -->
+        <!-- Ambient glow -->
 
         <ellipse
             cx="190"
@@ -575,9 +575,6 @@
                 stroke="#8B3B83"
                 stroke-width="1"/>
 
-
-            <!-- bubble appearance -->
-
             <animate
                 attributeName="opacity"
                 values="0;1;1;1;0"
@@ -587,27 +584,25 @@
 
         </g>
 
-         <!-- ================================================= -->
-        <!-- HAIR (Back Layer - Mirrored) -->
+
         <!-- ================================================= -->
+        <!-- SIMPLE HAIR — BEHIND HEAD -->
+        <!-- ================================================= -->
+
         <path
             d="
-                M 125,112
-                C 125,50  145,45  191,45
-                C 237,45  257,50  257,112
-                C 257,145 240,155 240,112
-                C 230,95  210,90  191,90
-                C 172,90  152,95  142,112
-                C 142,155 125,145 125,112
+                M137 103
+                C137 69 160 50 191 50
+                C222 50 245 69 245 103
+                L239 143
+                L224 151
+                L158 151
+                L143 143
                 Z
             "
             fill="#261228"
             stroke="#713565"
             stroke-width="1"/>
-
-  
-
-
 
 
         <!-- ================================================= -->
@@ -616,46 +611,143 @@
 
         <ellipse
             cx="191"
-            cy="112"
+            cy="114"
             rx="48"
-            ry="55"
+            ry="52"
             fill="#E8C0AE"/>
 
 
-          <!-- ================================================= -->
-        <!-- HAIR (Back Layer - Fixed Height) -->
         <!-- ================================================= -->
+        <!-- HEADPHONES — BAND -->
+        <!-- ================================================= -->
+
         <path
             d="
-                M 125,120
-                C 125,75  150,55  191,55
-                C 232,55  257,75  257,120
-                C 257,150 245,150 242,120
-                C 235,92  213,87  191,87
-                C 169,87  147,92  140,120
-                C 137,150 125,150 125,120
-                Z
+                M133 112
+                C133 68 157 43 191 43
+                C225 43 249 68 249 112
             "
-            fill="#261228"
-            stroke="#713565"
-            stroke-width="1"/>
+            fill="none"
+            stroke="#A855F7"
+            stroke-width="10"
+            stroke-linecap="round"/>
 
 
-        <!-- ================================================= -->
-        <!-- Hair front (Fixed Height Bangs) -->
-        <!-- ================================================= -->
+        <!-- Inner headphone band -->
+
         <path
             d="
-                M 143,101
-                C 146,80  165,69  191,69
-                C 217,69  236,80  239,101
-                C 225,91  210,88  191,88
-                C 172,88  157,91  143,101
-                Z
+                M139 108
+                C139 72 160 51 191 51
+                C222 51 243 72 243 108
             "
-            fill="#2B142D"/>
+            fill="none"
+            stroke="#321735"
+            stroke-width="5"
+            stroke-linecap="round"/>
 
 
+        <!-- ================================================= -->
+        <!-- LEFT HEADPHONE -->
+        <!-- ================================================= -->
+
+        <rect
+            x="126"
+            y="101"
+            width="25"
+            height="55"
+            rx="12"
+            fill="#6D2C8A"
+            stroke="#C084FC"
+            stroke-width="2"/>
+
+
+        <rect
+            x="132"
+            y="108"
+            width="13"
+            height="41"
+            rx="6"
+            fill="#E879F9"
+            opacity="0.8"/>
+
+
+        <circle
+            cx="139"
+            cy="128"
+            r="5"
+            fill="#F0ABFC"
+            filter="url(#glow)">
+
+            <animate
+                attributeName="opacity"
+                values="0.4;1;0.4"
+                dur="2s"
+                repeatCount="indefinite"/>
+
+        </circle>
+
+
+        <!-- ================================================= -->
+        <!-- RIGHT HEADPHONE -->
+        <!-- ================================================= -->
+
+        <rect
+            x="231"
+            y="101"
+            width="25"
+            height="55"
+            rx="12"
+            fill="#6D2C8A"
+            stroke="#C084FC"
+            stroke-width="2"/>
+
+
+        <rect
+            x="237"
+            y="108"
+            width="13"
+            height="41"
+            rx="6"
+            fill="#E879F9"
+            opacity="0.8"/>
+
+
+        <circle
+            cx="244"
+            cy="128"
+            r="5"
+            fill="#F0ABFC"
+            filter="url(#glow)">
+
+            <animate
+                attributeName="opacity"
+                values="0.4;1;0.4"
+                dur="2s"
+                begin="0.5s"
+                repeatCount="indefinite"/>
+
+        </circle>
+
+
+        <!-- ================================================= -->
+        <!-- HEADPHONE AI ACCENT -->
+        <!-- ================================================= -->
+
+        <circle
+            cx="191"
+            cy="47"
+            r="3"
+            fill="#E879F9"
+            filter="url(#glow)">
+
+            <animate
+                attributeName="r"
+                values="2;4;2"
+                dur="1.8s"
+                repeatCount="indefinite"/>
+
+        </circle>
 
 
         <!-- ================================================= -->
@@ -664,12 +756,10 @@
 
         <ellipse
             cx="173"
-            cy="111"
+            cy="112"
             rx="5"
             ry="3"
             fill="#2A182B">
-
-            <!-- blink -->
 
             <animate
                 attributeName="ry"
@@ -683,7 +773,7 @@
 
         <ellipse
             cx="210"
-            cy="111"
+            cy="112"
             rx="5"
             ry="3"
             fill="#2A182B">
@@ -698,19 +788,23 @@
         </ellipse>
 
 
-        <!-- Nose -->
+        <!-- ================================================= -->
+        <!-- NOSE -->
+        <!-- ================================================= -->
 
         <path
-            d="M191 113 L188 126 L195 127"
+            d="M191 114 L188 126 L195 127"
             fill="none"
             stroke="#A36F65"
             stroke-width="1"/>
 
 
-        <!-- Smile -->
+        <!-- ================================================= -->
+        <!-- SMILE -->
+        <!-- ================================================= -->
 
         <path
-            d="M179 137 Q191 146 203 137"
+            d="M179 138 Q191 147 203 138"
             fill="none"
             stroke="#7E4851"
             stroke-width="2"/>
@@ -730,7 +824,7 @@
 
 
         <!-- ================================================= -->
-        <!-- BODY (DRESS) -->
+        <!-- BODY / DRESS -->
         <!-- ================================================= -->
 
         <path
@@ -793,133 +887,145 @@
             stroke-width="1"/>
 
 
-      <!-- ================================================= -->
-<!-- LAPTOP -->
-<!-- ================================================= -->
+        <!-- ================================================= -->
+        <!-- LAPTOP -->
+        <!-- ================================================= -->
 
-<!-- Laptop outer body -->
-
-<rect
-    x="91"
-    y="216"
-    width="198"
-    height="108"
-    rx="12"
-    fill="#E8E0EE"
-    stroke="#C5B6CC"
-    stroke-width="2"/>
+        <rect
+            x="91"
+            y="216"
+            width="198"
+            height="108"
+            rx="12"
+            fill="#E8E0EE"
+            stroke="#C5B6CC"
+            stroke-width="2"/>
 
 
-<!-- LIGHT MODE SCREEN -->
+        <!-- LIGHT MODE SCREEN -->
 
-<rect
-    x="99"
-    y="224"
-    width="182"
-    height="92"
-    rx="8"
-    fill="#FAF7FC"
-    stroke="#D5C9DC"
-    stroke-width="1"/>
-
-
-<!-- Screen accent -->
-
-<rect
-    x="111"
-    y="237"
-    width="155"
-    height="2"
-    fill="url(#accent)"
-    opacity="0.9"/>
+        <rect
+            x="99"
+            y="224"
+            width="182"
+            height="92"
+            rx="8"
+            fill="#FFFFFF"
+            stroke="#D5C9DC"
+            stroke-width="1"/>
 
 
-<!-- Terminal dots -->
+        <!-- Screen accent -->
 
-<circle cx="118" cy="249" r="3" fill="#C0268C"/>
-<circle cx="129" cy="249" r="3" fill="#7E22CE"/>
-<circle cx="140" cy="249" r="3" fill="#A855F7"/>
-
-
-<!-- Code line 1 -->
-
-<text
-    x="116"
-    y="268"
-    fill="#69466E"
-    font-family="monospace"
-    font-size="10">
-
-    &gt; initializing_ai...
-
-    <animate
-        attributeName="opacity"
-        values="0.3;1;0.3"
-        dur="2.5s"
-        repeatCount="indefinite"/>
-
-</text>
+        <rect
+            x="111"
+            y="237"
+            width="155"
+            height="2"
+            fill="url(#accent)"
+            opacity="0.9"/>
 
 
-<!-- Code line 2 -->
+        <!-- Terminal dots -->
 
-<text
-    x="116"
-    y="284"
-    fill="#754D7A"
-    font-family="monospace"
-    font-size="10">
+        <circle
+            cx="118"
+            cy="249"
+            r="3"
+            fill="#C0268C"/>
 
-    &gt; loading_llm ✓
+        <circle
+            cx="129"
+            cy="249"
+            r="3"
+            fill="#7E22CE"/>
 
-</text>
-
-
-<!-- Code line 3 -->
-
-<text
-    x="116"
-    y="300"
-    fill="#8B3F91"
-    font-family="monospace"
-    font-size="10">
-
-    &gt; agent_ready
-
-</text>
+        <circle
+            cx="140"
+            cy="249"
+            r="3"
+            fill="#A855F7"/>
 
 
-<!-- Cursor -->
+        <!-- Code line 1 -->
 
-<rect
-    x="191"
-    y="293"
-    width="5"
-    height="10"
-    fill="#A855F7">
+        <text
+            x="116"
+            y="268"
+            fill="#69466E"
+            font-family="monospace"
+            font-size="10">
 
-    <animate
-        attributeName="opacity"
-        values="1;0;1"
-        dur="0.8s"
-        repeatCount="indefinite"/>
+            &gt; initializing_ai...
 
-</rect>
+            <animate
+                attributeName="opacity"
+                values="0.3;1;0.3"
+                dur="2.5s"
+                repeatCount="indefinite"/>
+
+        </text>
 
 
-<!-- Laptop base -->
+        <!-- Code line 2 -->
 
-<path
-    d="
-        M78 326
-        H302
-        L286 339
-        H94
-        Z
-    "
-    fill="#E8E0EE"
-    stroke="#C5B6CC"
-    stroke-width="1"/>
+        <text
+            x="116"
+            y="284"
+            fill="#754D7A"
+            font-family="monospace"
+            font-size="10">
+
+            &gt; loading_llm ✓
+
+        </text>
+
+
+        <!-- Code line 3 -->
+
+        <text
+            x="116"
+            y="300"
+            fill="#8B3F91"
+            font-family="monospace"
+            font-size="10">
+
+            &gt; agent_ready
+
+        </text>
+
+
+        <!-- Cursor -->
+
+        <rect
+            x="191"
+            y="293"
+            width="5"
+            height="10"
+            fill="#A855F7">
+
+            <animate
+                attributeName="opacity"
+                values="1;0;1"
+                dur="0.8s"
+                repeatCount="indefinite"/>
+
+        </rect>
+
+
+        <!-- Laptop base -->
+
+        <path
+            d="
+                M78 326
+                H302
+                L286 339
+                H94
+                Z
+            "
+            fill="#E8E0EE"
+            stroke="#C5B6CC"
+            stroke-width="1"/>
 
 
         <!-- ================================================= -->
