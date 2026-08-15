@@ -1,0 +1,354 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1280"
+     height="400"
+     viewBox="0 0 1280 400">
+
+  <defs>
+
+    <!-- Background -->
+    <linearGradient id="background"
+                    x1="0" y1="0"
+                    x2="1" y2="1">
+      <stop offset="0%" stop-color="#040207"/>
+      <stop offset="45%" stop-color="#0B0610"/>
+      <stop offset="75%" stop-color="#15091A"/>
+      <stop offset="100%" stop-color="#07030B"/>
+    </linearGradient>
+
+    <!-- Ambient purple -->
+    <radialGradient id="purpleGlow">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.18"/>
+      <stop offset="45%" stop-color="#7E22CE" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Ambient pink -->
+    <radialGradient id="pinkGlow">
+      <stop offset="0%" stop-color="#C0268C" stop-opacity="0.14"/>
+      <stop offset="50%" stop-color="#C0268C" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Name gradient -->
+    <linearGradient id="nameGradient"
+                    x1="0" y1="0"
+                    x2="1" y2="0">
+      <stop offset="0%" stop-color="#F5D0FE"/>
+      <stop offset="45%" stop-color="#E879F9"/>
+      <stop offset="100%" stop-color="#C084FC"/>
+    </linearGradient>
+
+    <!-- Accent -->
+    <linearGradient id="accent"
+                    x1="0" y1="0"
+                    x2="1" y2="0">
+      <stop offset="0%" stop-color="#C0268C"/>
+      <stop offset="50%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#E879F9"/>
+    </linearGradient>
+
+    <!-- Glow -->
+    <filter id="glow"
+            x="-100%" y="-100%"
+            width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow"
+            x="-100%" y="-100%"
+            width="300%" height="300%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+
+  </defs>
+
+
+  <!-- ================================================= -->
+  <!-- BACKGROUND -->
+  <!-- ================================================= -->
+
+  <rect width="1280"
+        height="400"
+        rx="20"
+        fill="url(#background)"/>
+
+  <ellipse cx="830"
+           cy="190"
+           rx="420"
+           ry="270"
+           fill="url(#purpleGlow)">
+
+    <animate attributeName="cx"
+             values="800;870;800"
+             dur="9s"
+             repeatCount="indefinite"/>
+
+    <animate attributeName="cy"
+             values="190;215;190"
+             dur="9s"
+             repeatCount="indefinite"/>
+
+  </ellipse>
+
+
+  <ellipse cx="1120"
+           cy="120"
+           rx="250"
+           ry="220"
+           fill="url(#pinkGlow)">
+
+    <animate attributeName="cx"
+             values="1120;1080;1120"
+             dur="8s"
+             repeatCount="indefinite"/>
+
+  </ellipse>
+
+
+  <!-- ================================================= -->
+  <!-- SUBTLE GRID -->
+  <!-- ================================================= -->
+
+  <g stroke="#D946EF"
+     stroke-width="1"
+     opacity="0.035">
+
+    <path d="M0 80H1280"/>
+    <path d="M0 160H1280"/>
+    <path d="M0 240H1280"/>
+    <path d="M0 320H1280"/>
+
+    <path d="M160 0V400"/>
+    <path d="M320 0V400"/>
+    <path d="M480 0V400"/>
+    <path d="M640 0V400"/>
+    <path d="M800 0V400"/>
+    <path d="M960 0V400"/>
+    <path d="M1120 0V400"/>
+
+  </g>
+
+
+  <!-- ================================================= -->
+  <!-- BACKGROUND PARTICLES -->
+  <!-- ================================================= -->
+
+  <g fill="#C0268C"
+     filter="url(#glow)">
+
+    <circle cx="120" cy="65" r="1.8">
+      <animate attributeName="cy"
+               values="65;40;65"
+               dur="5s"
+               repeatCount="indefinite"/>
+
+      <animate attributeName="opacity"
+               values="0.15;0.7;0.15"
+               dur="5s"
+               repeatCount="indefinite"/>
+    </circle>
+
+
+    <circle cx="270" cy="300" r="1.5">
+      <animate attributeName="cy"
+               values="300;275;300"
+               dur="6s"
+               repeatCount="indefinite"/>
+
+      <animate attributeName="opacity"
+               values="0.1;0.65;0.1"
+               dur="6s"
+               repeatCount="indefinite"/>
+    </circle>
+
+
+    <circle cx="540" cy="75" r="1.8">
+      <animate attributeName="cy"
+               values="75;105;75"
+               dur="7s"
+               repeatCount="indefinite"/>
+
+      <animate attributeName="opacity"
+               values="0.1;0.7;0.1"
+               dur="7s"
+               repeatCount="indefinite"/>
+    </circle>
+
+
+    <circle cx="680" cy="320" r="1.8">
+      <animate attributeName="cy"
+               values="320;285;320"
+               dur="5s"
+               repeatCount="indefinite"/>
+
+      <animate attributeName="opacity"
+               values="0.1;0.8;0.1"
+               dur="5s"
+               repeatCount="indefinite"/>
+    </circle>
+
+
+    <circle cx="1180" cy="55" r="2">
+      <animate attributeName="cy"
+               values="55;85;55"
+               dur="6s"
+               repeatCount="indefinite"/>
+
+      <animate attributeName="opacity"
+               values="0.1;0.8;0.1"
+               dur="6s"
+               repeatCount="indefinite"/>
+    </circle>
+
+  </g>
+
+
+  <!-- ================================================= -->
+  <!-- LEFT SIDE -->
+  <!-- ================================================= -->
+
+  <!-- I AM -->
+
+  <text x="80"
+        y="91"
+        fill="#E879F9"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="16"
+        font-weight="700"
+        letter-spacing="5">
+
+    I AM
+
+  </text>
+
+
+  <!-- NAME -->
+
+  <text x="78"
+        y="155"
+        fill="url(#nameGradient)"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="54"
+        font-weight="700"
+        letter-spacing="1">
+
+    KANEEZ FATIMA
+
+  </text>
+
+
+  <!-- TAGLINE -->
+
+  <text x="80"
+        y="200"
+        fill="#F3E8F5"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="23"
+        font-weight="500">
+
+    Engineering AI, LLMs &amp;
+
+  </text>
+
+
+  <text x="80"
+        y="230"
+        fill="#F3E8F5"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="23"
+        font-weight="500">
+
+    Intelligent Agents
+
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- ROTATING FOCUS -->
+  <!-- ================================================= -->
+
+  <g>
+
+    <!-- Machine Learning -->
+
+    <text x="80"
+          y="275"
+          fill="#C8B8CB"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16">
+
+      Machine Learning
+
+      <animate attributeName="opacity"
+               values="1;1;0;0"
+               keyTimes="0;0.18;0.24;1"
+               dur="8s"
+               repeatCount="indefinite"/>
+
+    </text>
+
+
+    <!-- Generative AI -->
+
+    <text x="80"
+          y="275"
+          fill="#C8B8CB"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16"
+          opacity="0">
+
+      Generative AI
+
+      <animate attributeName="opacity"
+               values="0;0;1;1;0"
+               keyTimes="0;0.24;0.30;0.43;0.49"
+               dur="8s"
+               repeatCount="indefinite"/>
+
+    </text>
+
+
+    <!-- Agentic AI -->
+
+    <text x="80"
+          y="275"
+          fill="#C8B8CB"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16"
+          opacity="0">
+
+      Agentic AI
+
+      <animate attributeName="opacity"
+               values="0;0;1;1;0"
+               keyTimes="0;0.49;0.55;0.68;0.74"
+               dur="8s"
+               repeatCount="indefinite"/>
+
+    </text>
+
+
+    <!-- LLM Applications -->
+
+    <text x="80"
+          y="275"
+          fill="#C8B8CB"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16"
+          opacity="0">
+
+      LLM Applications
+
+      <animate attributeName="opacity"
+               values="0;0;1;1"
+               keyTimes="0;0.74;0.80;1"
+               dur="8s"
+               repeatCount="indefinite"/>
+
+    </text>
+  </g>
+</svg>
