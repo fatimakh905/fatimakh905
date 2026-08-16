@@ -168,4 +168,16 @@
   game state, movement rules, and decision-making without relying on a
   game engine.
 </p>
+<!-- ================================================= -->
+<!-- CONTRIBUTION SNAKE -->
+<!-- ================================================= -->
 
+<h2 align="left">Contribution Graph</h2>
+
+<p align="center">
+  <img
+    src="./dist/github-contribution-grid-snake-dark.svg"
+    alt="GitHub contribution snake animation"
+    width="100%"
+  />
+</p>
