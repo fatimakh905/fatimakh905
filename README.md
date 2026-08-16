@@ -181,3 +181,21 @@
     width="100%"
   />
 </p>
+
+
+<!-- ==================== LET'S CONNECT ==================== -->
+
+<div align="center">
+    <img src="./assets/connect.svg"
+         width="100%"
+         alt="Let's Connect">
+</div>
+
+<p align="center">
+    <a href="mailto:meetkaneezfatima@gmail.com">
+        <img src="https://img.shields.io/badge/Email-meetkaneezfatima%40gmail.com-E879F9?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+    </a>
+    <a href="https://www.linkedin.com/in/kaneez-fatima-8a1516335">
+        <img src="https://img.shields.io/badge/LinkedIn-Kaneez%20Fatima-A855F7?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+    </a>
+</p>
