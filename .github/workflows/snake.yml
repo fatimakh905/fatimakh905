@@ -13,14 +13,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
       - name: Generate contribution snake
         uses: Platane/snk@v3
         with:
           github_user_name: fatimakh905
           outputs: |
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#A855F7&color_dots=#161B22,#312E81,#4338CA,#6366F1,#8B5CF6
+            dist/github-contribution-grid-snake.svg?palette=github-dark&color_snake=#A855F7&color_dots=#161B22,#312E81,#4338CA,#6366F1,#8B5CF6
 
-      - name: Push generated files
+      - name: Commit generated snake
         uses: EndBug/add-and-commit@v9
         with:
           message: "chore: update contribution snake"
