@@ -25,11 +25,62 @@
 
 <!------Pojects----->
 <h2 align="left">Featured Projects</h2>
+<!-- ================================================= -->
+
 
 <p align="left">
   A few things I've built while exploring AI, data, software development, and
   the process of turning ideas into working systems.
 </p>
+
+<!-- ================================================= -->
+
+<!-- AI LEAD QUALIFICATION AGENT -->
+
+<!-- ================================================= -->
+
+<h3 align="left">
+  <a href="https://github.com/fatimakh905/Ai_Project_Consultant">
+    AI Lead Qualification Agent
+  </a>
+</h3>
+
+
+
+<p align="left">
+  An Agentic AI system built during my internship to simulate how a software
+  company can handle project inquiries through an AI-powered conversation.
+  The agent gathers project requirements, understands the client's needs,
+  matches them with the company's services, creates a recommendation plan,
+  and captures the lead when the client is ready to move forward.
+</p>
+
+<p align="left">
+  <b>Core flow:</b>
+  Conversation → Requirement Gathering → Service Matching →
+  Recommendation → Lead Capture
+</p>
+
+<p align="left">
+  The system uses a RAG-powered knowledge base to retrieve relevant company
+  information, while the agent manages the conversation and uses tools for
+  requirements, service discovery, and lead capture.
+</p>
+
+<p align="left">
+  <b>Built with:</b>
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white" alt="LangChain">
+  <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langgraph&logoColor=white" alt="LangGraph">
+  <img src="https://img.shields.io/badge/RAG-8B5CF6?style=flat-square" alt="RAG">
+  <img src="https://img.shields.io/badge/ChromaDB-FF6F61?style=flat-square" alt="ChromaDB">
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit">
+</p>
+</p>
+
+
+
 <!-- ================================================= -->
 <!-- MEDIREMIND -->
 <!-- ================================================= -->
