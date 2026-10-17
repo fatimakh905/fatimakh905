@@ -176,15 +176,26 @@
 <!-- OBSTACLE AVOIDING ROBOT -->
 <!-- ================================================= -->
 
-<h3 align="left">    Obstacle Avoiding Robot
-  <a href="https://github.com/fatimakh905/Obstacle-Avoiding-Robot">
+<h3 align="left">  
+  <a href="https://github.com/fatimakh905/Obstacle-Avoiding-Robot-car">
+        Obstacle Avoiding Robot Car
   </a>
 </h3>
 
 <p align="left">
-  My hardware project: an autonomous Arduino-based robot that uses ultrasonic
-  sensing to detect obstacles and motor control to change its movement and
-  navigate around them.
+  My hardware project: This project is an Arduino-based autonomous robot car that detects obstacles using an ultrasonic sensor and chooses a direction based on the available distance.
+  A servo motor rotates the sensor to scan the left and right sides. The robot stops, reverses, compares the measured distances, and turns to avoid obstacles.
+</p>
+
+<p align="left">
+  <b>Built with:</b>
+</p>
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=arduino&logoColor=white" alt="Arduino">
+  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++">
+  <img src="https://img.shields.io/badge/Arduino_IDE-1.8.13-00979D?style=flat-square&logo=arduino&logoColor=white" alt="Arduino IDE">
+  <img src="https://img.shields.io/badge/AFMotor-Library-555555?style=flat-square" alt="AFMotor">
 </p>
 
 
