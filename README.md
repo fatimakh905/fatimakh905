@@ -110,21 +110,7 @@
 <img src="https://img.shields.io/badge/Android_SDK-3DDC84?style=flat-square&logo=android&logoColor=white" alt="Android SDK">
 </p>
 
-<!-- ================================================= -->
-<!-- AUDITPY -->
-<!-- ================================================= -->
 
-<h3 align="left"> AuditPy | Vulnerability Analysis Tool
-  <a href="https://github.com/fatimakh905/AuditPy">
-  </a>
-</h3>
-
-<p align="left">
-  AuditPy started from the idea of making open-source package risks easier
-  to analyze. I built a Python pipeline around <b>OSV.dev</b> data to collect,
-  clean, validate, and structure vulnerability information, turning raw
-  security data into something that can actually be explored and analyzed.
-</p>
 
 <!-- ================================================= -->
 <!-- E-COMMERCE -->
@@ -214,8 +200,9 @@
 <!-- SPLITHIVE -->
 <!-- ================================================= -->
 
-<h3 align="left">    SplitHive Track | Expense Splitting Application
+<h3 align="left">   
   <a href="https://github.com/fatimakh905/SplitHive">
+       SplitHive Track | Personal & Group Expense Tracker
   </a>
 </h3>
 
@@ -226,13 +213,40 @@
   and keeping the information stored locally with SQLite.
 </p>
 
+<p align="left">
+  <b>Built with:</b>
+</p>
+
+<div align="left">
+
+<img src="https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt="C#">
+<img src="https://img.shields.io/badge/.NET-8.0-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt=".NET 8">
+<img src="https://img.shields.io/badge/WPF-Windows-0078D4?style=flat-square&logo=windows&logoColor=white" alt="WPF">
+<img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite">
+<img src="https://img.shields.io/badge/Visual%20Studio-5C2D91?style=flat-square&logo=visualstudio&logoColor=white" alt="Visual Studio">
+
+</div>
 <!-- ================================================= -->
 <!-- Other PROJECTS -->
 <!-- ================================================= -->
 
 <h2 align="left">Other Projects</h2>
 
+<!-- ================================================= -->
+<!-- AUDITPY -->
+<!-- ================================================= -->
 
+<h3 align="left"> AuditPy | Vulnerability Analysis Tool
+  <a href="https://github.com/fatimakh905/AuditPy">
+  </a>
+</h3>
+
+<p align="left">
+  AuditPy started from the idea of making open-source package risks easier
+  to analyze. I built a Python pipeline around <b>OSV.dev</b> data to collect,
+  clean, validate, and structure vulnerability information, turning raw
+  security data into something that can actually be explored and analyzed.
+</p>
 
 <!-- ================================================= -->
 <!-- SMARTSHOP -->
