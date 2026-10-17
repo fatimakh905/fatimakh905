@@ -119,8 +119,9 @@
 <!-- E-COMMERCE -->
 <!-- ================================================= -->
 
-<h3 align="left">    E-Commerce Data Analysis
-  <a href="https://github.com/fatimakh905/E-commerce-Data-Analysis">
+<h3 align="left">   
+  <a href="https://github.com/fatimakh905/EDA_Ecomerce_Dataset">
+      Explorartory Data Analysis on Ecommerce Sales Data
   </a>
 </h3>
 
@@ -130,6 +131,18 @@
   across the dataset, created visualizations, and experimented with feature
   preparation and machine-learning approaches.
 </p>
+
+<p align="left">
+  <b>Built with:</b>
+</p>
+
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white)](https://matplotlib.org/)
+[![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge&logo=python&logoColor=white)](https://seaborn.pydata.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
+
+
 <!-- ================================================= -->
 <!-- US NATURAL RESOURCES -->
 <!-- ================================================= -->
@@ -140,21 +153,24 @@
   </a>
 </h3>
 
-<p align="left">
-  <b>Built with:</b>
-<p align="left">
+
 <p align="left">
   An exploratory analysis of U.S. natural-resource data from 2014–2018.
   I focused on cleaning and understanding the dataset first, then used
   exploratory analysis and visualizations to find patterns and relationships
   that were worth investigating further.
 </p>
+
+
+<p align="left">
+  <b>Built with:</b>
 </p>
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
 [![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white)](https://matplotlib.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
+
 
 <!-- ================================================= -->
 <!-- OBSTACLE AVOIDING ROBOT -->
