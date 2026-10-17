@@ -135,7 +135,7 @@
 <!-- ================================================= -->
 
 <h3 align="left">    US Natural Resources | EDA 2014–2018
-  <a href="https://github.com/fatimakh905/US-Natural-Resources-EDA">
+  <a href="https://github.com/fatimakh905/EDA-US-Natural-Resources-2014-2018">
   </a>
 </h3>
 
