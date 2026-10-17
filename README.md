@@ -87,7 +87,7 @@
 
 <h3 align="left">
   <a href="https://github.com/fatimakh905/Smart-Prescription-Scanner-and-Medication-Reminder-Mobile-Application">
-      MediRemind | AI Prescription Assistant
+      MediRemind | AI Prescription Reminder Assistant
   </a>
 </h3>
 
@@ -201,7 +201,7 @@
 <!-- ================================================= -->
 
 <h3 align="left">   
-  <a href="https://github.com/fatimakh905/SplitHive">
+  <a href="https://github.com/fatimakh905/Splithive-Track">
        SplitHive Track | Personal & Group Expense Tracker
   </a>
 </h3>
