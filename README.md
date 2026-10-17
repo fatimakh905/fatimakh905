@@ -140,14 +140,21 @@
   </a>
 </h3>
 
-
+<p align="left">
+  <b>Built with:</b>
+<p align="left">
 <p align="left">
   An exploratory analysis of U.S. natural-resource data from 2014–2018.
   I focused on cleaning and understanding the dataset first, then used
   exploratory analysis and visualizations to find patterns and relationships
   that were worth investigating further.
 </p>
+</p>
 
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white)](https://matplotlib.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
 
 <!-- ================================================= -->
 <!-- OBSTACLE AVOIDING ROBOT -->
