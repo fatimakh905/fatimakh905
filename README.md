@@ -99,6 +99,16 @@
   and automated reminders to turn medicines and timings into a usable schedule.
 </p>
 
+<p align="left">
+  <b>Built with:</b>
+<p align="left">
+<img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java">
+<img src="https://img.shields.io/badge/Android_Studio-3DDC84?style=flat-square&logo=androidstudio&logoColor=white" alt="Android Studio">
+<img src="https://img.shields.io/badge/XML-E34F26?style=flat-square&logo=xml&logoColor=white" alt="XML">
+<img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite">
+<img src="https://img.shields.io/badge/OCR-6C63FF?style=flat-square" alt="OCR">
+<img src="https://img.shields.io/badge/Android_SDK-3DDC84?style=flat-square&logo=android&logoColor=white" alt="Android SDK">
+</p>
 
 <!-- ================================================= -->
 <!-- AUDITPY -->
@@ -200,13 +210,6 @@
 </p>
 
 
-
-<!-- ================================================= -->
-<!-- Other PROJECTS -->
-<!-- ================================================= -->
-
-<h2 align="left">Other Projects</h2>
-
 <!-- ================================================= -->
 <!-- SPLITHIVE -->
 <!-- ================================================= -->
@@ -222,6 +225,12 @@
   easier to track by recording expenses, splitting costs between people,
   and keeping the information stored locally with SQLite.
 </p>
+
+<!-- ================================================= -->
+<!-- Other PROJECTS -->
+<!-- ================================================= -->
+
+<h2 align="left">Other Projects</h2>
 
 
 
