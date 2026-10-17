@@ -134,10 +134,12 @@
 <!-- US NATURAL RESOURCES -->
 <!-- ================================================= -->
 
-<h3 align="left">    US Natural Resources | EDA 2014–2018
+<h3 align="left">   
   <a href="https://github.com/fatimakh905/EDA-US-Natural-Resources-2014-2018">
+       US Natural Resources | EDA 2014–2018
   </a>
 </h3>
+
 
 <p align="left">
   An exploratory analysis of U.S. natural-resource data from 2014–2018.
