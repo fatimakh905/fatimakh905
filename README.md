@@ -85,8 +85,9 @@
 <!-- MEDIREMIND -->
 <!-- ================================================= -->
 
-<h3 align="left">MediRemind | AI Prescription Assistant
-  <a href="https://github.com/fatimakh905/MediRemind">
+<h3 align="left">
+  <a href="https://github.com/fatimakh905/Smart-Prescription-Scanner-and-Medication-Reminder-Mobile-Application">
+      MediRemind | AI Prescription Assistant
   </a>
 </h3>
 
