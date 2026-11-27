@@ -118,7 +118,7 @@
 
 <h3 align="left">   
   <a href="https://github.com/fatimakh905/EDA_Ecomerce_Dataset">
-      Explorartory Data Analysis on Ecommerce Sales Data
+      Exploratory Data Analysis on E-commerce Sales Data
   </a>
 </h3>
 
